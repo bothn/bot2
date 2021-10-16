@@ -21,7 +21,7 @@ $chartConfig = '{
     "labels": [' . implode(',', $xc) . '],
     "datasets": [{
       "label": "Users",
-      "data": [' . implode(',', $data) . ']
+      "data": [' . implode(',', $xc) . ']
     }]
   }
 }';
