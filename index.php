@@ -16,7 +16,7 @@ $chartConfig = '{
     "labels":"'.$fecha .'",
     "datasets": [{
       "label": "Users",
-      "data": '.$exitosas .'
+      "data": "'.$exitosas .'"
     }]
   } , 
     "options": {
