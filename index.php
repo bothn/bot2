@@ -27,6 +27,15 @@ $chartCon2 = '{
 
 $chartConfigArr = array(
   'type' => 'bar',
+
+    "options": {
+    "scales": {
+      "xAxes": [{
+        "type": "time" 
+         
+      }]
+    }
+  } ,
   'data' => array(
     'labels' => array($dates),
     'datasets' => array(
