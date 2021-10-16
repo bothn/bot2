@@ -18,10 +18,10 @@ $xc = array($a);
 $chartConfig = '{
   "type": "bar",
   "data": {
-    "labels": [' . $xc. '],
+    "labels": [' . implode(',', $xc) . '],
     "datasets": [{
       "label": "Users",
-      "data": [' . $xc. ']
+      "data":[2012, 2013, 2014, 2015, 2016]
     }]
   }
 }';
