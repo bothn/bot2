@@ -18,7 +18,7 @@ $xc = $a;
 $data = array(120, 60, 50, 180, 120);
 
 $chartConfig = '{
-  "type": "bar",
+  "type": "line",
   "data": {
     "labels": [2012, 2013, 2014, 2015, 2016],
     "datasets": [{
