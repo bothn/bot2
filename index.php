@@ -24,7 +24,7 @@ $final_key = '['.implode(",", $a).']';
         "xAxes": [{
           "type": "time"
         }]
-      } , legend: false
+      } , "legend": false
     }
 }';
 
