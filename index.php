@@ -24,7 +24,7 @@ $chartConfig = '{
       "xAxes": [{
         "type": "time",
         "time": {"parser": "M/D/YYYY HH:mm:ss LT"},
-        "scaleLabel": {"display": true, "labelString": "Date"}
+        "scaleLabel": {"display": true, "labelString": Date}
       }]
     }
   } 
