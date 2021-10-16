@@ -38,7 +38,18 @@ $chartConfig = '{
         ]
       }
     ]
-  }
+  }, "options": {
+        "scales": {
+            "x": {
+                "type": "time",
+                "time": {
+                    "displayFormats": {
+                        "quarter": "MMM YYYY"
+                    }
+                }
+            }
+        }
+    }
 }';
 
  echo 'https://quickchart.io/chart?w=500&h=300&c=' . $chartConfig;
