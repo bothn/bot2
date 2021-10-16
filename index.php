@@ -19,7 +19,13 @@ $final_key = '['.implode(",", $a).']';
       "label": "Users",
       "data": [' . implode(',', $b) . ']
     }]
-  } 
+  }  ,   "options": {
+      "scales": {
+        "xAxes": [{
+          "type": "time"
+        }]
+      } , legend: false
+    }
 }';
 
  echo 'https://quickchart.io/chart?w=500&h=300&c=' . $chartConfig;
