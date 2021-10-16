@@ -29,5 +29,5 @@ $chartConfigArr = array(
 );
 $chartConfig = json_encode($chartConfigArr);
  
-echo $dates;
+echo urlencode($chartConfig);
 ?> 
