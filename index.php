@@ -13,7 +13,7 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
  $dates= implode(",", $a);
  $ok= implode(",", $b);
 
-$xc = array($a);
+$xc = $a;
 
 $chartConfig = '{
   "type": "bar",
