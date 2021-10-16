@@ -19,7 +19,7 @@ $final_key = '['.implode(",", $a).']';
       "label": "Users",
       "data": [' . implode(',', $b) . ']
     }]
-  },,
+  },
   "options": {
     "title": {
       "text": "Chart.js Time Scale"
