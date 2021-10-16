@@ -1,6 +1,6 @@
 <?php
 $pc = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/reports_kpis_h/test3json.php"),true);
-print_r($pc);
+
 foreach ($weather as $pc) { 
     $FECHA_HXH= $pc["FECHA_HXH"]." ";
     $INTENTOS= $pc["INTENTOS"]." ";
@@ -11,10 +11,10 @@ foreach ($weather as $pc) {
 $chartConfig = '{
   "type": "bar",
   "data": {
-    "labels": $pc["FECHA_HXH"],
+    "labels": print_r($pc["FECHA_HXH"]),
     "datasets": [{
       "label": "Users",
-      "data": $pc["SUCCESS"]
+      "data": print_r($pc["SUCCESS"])
     }]
   }
 }';
