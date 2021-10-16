@@ -22,21 +22,21 @@ $chartConfig = '{
  
  
  
-	scales: {
-		type: 'time',
-		xAxes: [  {
-            type: 'time', 
-			time: {
-                displayFormats: {
-					'millisecond': 'YYYY-MM DD HH',
-					'second': 'YYYY-MM DD HH',
-					'minute': 'YYYY-MM DD HH',
-					'hour': 'YYYY-MM DD HH',
-					'day': 'YYYY-MM DD HH',
-					'week': 'YYYY-MM DD HH',
-					'month': 'YYYY-MM DD HH',
-					'quarter': 'YYYY-MM DD HH',
-					'year': 'YYYY-MM DD HH',
+	"scales": {
+		"type": "time",
+		"xAxes": [  {
+            "type": "time", 
+			"time": {
+                "displayFormats": {
+					"millisecond": "YYYY-MM DD HH",
+					"second": "YYYY-MM DD HH",
+					"minute": "YYYY-MM DD HH",
+					"hour": "YYYY-MM DD HH",
+					"day": "YYYY-MM DD HH",
+					"week": "YYYY-MM DD HH",
+					"month": "YYYY-MM DD HH",
+					"quarter": "YYYY-MM DD HH",
+					"year": "YYYY-MM DD HH",
 								 }
                     
                 } 
