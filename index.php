@@ -15,7 +15,7 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
 
 $xc = $a;
 
-$chartConfigArr = '{
+$chartConfig = '{
   "type": "bar",
   "data": {
     "labels": [' . implode(",", $xc) . '],
@@ -26,7 +26,6 @@ $chartConfigArr = '{
   }
 }';
  
-
-$chartConfig = json_encode($chartConfigArr); 
+ 
 echo 'https://quickchart.io/chart?w=500&h=300&c=' . ($chartConfig);
 ?> 
