@@ -9,16 +9,7 @@ foreach ($weather as $pc) {
  
 }
 
-$chartConfig = '{
-  "type": "bar",
-  "data": {
-    "labels": [2012, 2013, 2014, 2015, 2016],
-    "datasets": [{
-      "label": "Users",
-      "data": [' . implode(',', $data) . ']
-    }]
-  }
-}';
-echo $chartConfig;
+ 
+echo [' . implode(',',$pc["FECHA_HXH"]) . '];
 echo $chartUrl = 'https://quickchart.io/chart?w=500&h=300&c=' . urlencode($chartConfig);
 ?>
