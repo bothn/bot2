@@ -41,7 +41,16 @@ $chartConfig = '{
   },    "options": {
       "scales": {
         "xAxes": [{
-          "type": "time"
+          "type": "time",
+                         "time": {
+                  "parser": "YYYY-MM-DD HH:mm:ss",
+                  "unit": "day",
+                  "displayFormats": {
+                     "day": "ddd"
+                  },
+                  "min": "2017-10-02 18:43:53",
+                  "max": "2017-10-09 18:43:53"
+               }
         }]
       }}
 }';
