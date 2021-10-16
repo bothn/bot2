@@ -15,13 +15,7 @@ $chartConfig = ' {
   "type": "line",
   "data": {
     "labels": [
-      new Date("2020-06-14T16:08:20.288Z"),
-      new Date("2020-06-15T16:08:20.288Z"),
-      new Date("2020-06-16T16:08:20.289Z"),
-      new Date("2020-06-17T16:08:20.289Z"),
-      new Date("2020-06-18T16:08:20.289Z"),
-      new Date("2020-06-19T16:08:20.289Z"),
-      new Date("2020-06-20T16:08:20.289Z")
+      new Date("' . implode(',', $a) . '")
     ],
     "datasets": [
       {
