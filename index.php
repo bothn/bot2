@@ -19,30 +19,7 @@ $final_key = '['.implode(",", $a).']';
       "label": "Users",
       "data": [' . implode(',', $b) . ']
     }]
-  },
-  "options": {
-    "title": {
-      "text": "Chart.js Time Scale"
-    },
-    "scales": {
-      "xAxes": [{
-        "type": "time",
-        "time": {
-          "parser": "MM/DD/YYYY HH:mm",
-        },
-        "scaleLabel": {
-          "display": true,
-          "labelString": "Date"
-        }
-      }],
-      "yAxes": [{
-        "scaleLabel": {
-          "display": true,
-          "labelString": "value"
-        }
-      }]
-    }
-  }
+  } 
 }';
 
  echo $chartConfig;
