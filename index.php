@@ -10,7 +10,7 @@ foreach ($weather as $pc) {
  
 }
 
-$chartConfig = '{
+$chartConfigArr = array(
   "type": "bar",
   "data": {
     "labels": labels,
@@ -19,7 +19,7 @@ $chartConfig = '{
       "data": data
     }]
   }
-}';
+);
 $chartConfig = json_encode($chartConfigArr);
 echo $chartConfig;
 echo $chartUrl = 'https://quickchart.io/chart?w=500&h=300&c=' . urlencode($chartConfig);
