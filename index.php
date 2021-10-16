@@ -4,7 +4,7 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
 
 
   foreach ($weather as $pc) { 
-    $a[]= $pc[FECHA_HXH]     ;
+    $a[]= $pc['FECHA_HXH']     ;
     $b[]= $pc["SUCCESS"]     ;
  
 }
