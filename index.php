@@ -23,8 +23,8 @@ $chartConfig = '{
     "scales": {
       "xAxes": [{
         "type": "time",
-        "time": {"parser": "MM/DD/YYYY HH:mm:ss"},
-        "scaleLabel": {"display": true, "labelString": Date}
+        "time": {"displayFormats": { "minute": "YYYY-MM DD HH:MI","hour": "YYYY-MM DD HH:MI"  }   },
+         
       }]
     }
   } 
