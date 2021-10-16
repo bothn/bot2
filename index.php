@@ -13,7 +13,7 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
 $chartConfig = '{
   "type": "line",
   "data": {
-    "labels":'. $fecha.',
+    "labels":'.$fecha.',
     "datasets": [{
       "label": "Users",
       "data": '.$exitosas.'
@@ -22,5 +22,5 @@ $chartConfig = '{
   
 }';
 
-echo $chartUrl = 'https://quickchart.io/chart?w=500&h=300&c=' . urlencode($chartConfig);
+echo $chartUrl = 'https://quickchart.io/chart?w=500&h=300&c={' . urlencode($chartConfig).'}';
 ?>
