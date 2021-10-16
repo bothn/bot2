@@ -22,8 +22,7 @@ $chartConfig = '{
     "options": {
     "scales": {
       "xAxes": [{
-        "type": "time",
-        "time": {"displayFormats": { "minute": "MM/DD/YYYY HH","hour": "MM/DD/YYYY HH"  }   },
+        "type": "time" 
          
       }]
     }
