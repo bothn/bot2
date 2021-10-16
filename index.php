@@ -11,7 +11,7 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
  $fecha= '['.implode(",", $a).']';
  $exitosas= '['.implode(",", $b).']';
 
- $dates= implode(',', $a);
+ $dates= implode("','", $a);
  $ok= implode(',', $b);
 
 $xc = $a;
