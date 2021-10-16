@@ -3,9 +3,23 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
   
  
   foreach ($weather as $pc) { 
-    $x[]= $pc["FECHA_HXH"]     ;
+    $a[]= $pc["FECHA_HXH"]     ;
+    $b[]= $pc["SUCCESS"]     ;
  
 }
- echo implode(",", $x);
+ $fecha= implode(",", $a);
+ $exitosas= implode(",", $b);
+
+$chartConfig = '{
+  "type": "bar",
+  "data": {
+    "labels": $fecha,
+    "datasets": [{
+      "label": "Users",
+      "data": $exitosas
+    }]
+  }
+}';
+
 echo $chartUrl = 'https://quickchart.io/chart?w=500&h=300&c=' . urlencode($chartConfig);
 ?>
