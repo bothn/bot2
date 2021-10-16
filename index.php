@@ -7,13 +7,13 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
     $b[]= $pc["SUCCESS"]     ;
  
 }
- $fecha= implode(",", $a);
+ $fecha= '['.implode(",", $a).']';
  $exitosas= '['.implode(",", $b).']';
 
 $chartConfig = '{
   "type": "line",
   "data": {
-    "labels":[2012, 2013, 2014, 2015, 2016],
+    "labels":'.$fecha .',
     "datasets": [{
       "label": "Users",
       "data": '.$exitosas .'
