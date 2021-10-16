@@ -1,5 +1,6 @@
 <?php
 $pc = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/reports_kpis_h/test3json.php"),true);
+print_r($pc);
 foreach ($weather as $pc) { 
     $FECHA_HXH= $pc["FECHA_HXH"]." ";
     $INTENTOS= $pc["INTENTOS"]." ";
