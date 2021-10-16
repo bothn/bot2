@@ -38,21 +38,18 @@ $chartConfig = '{
         ]
       }
     ]
-  },    "options": {
-      "scales": {
+  },   "options": {
+    "scales": {
         "xAxes": [{
-          "type": "time",
-                         "time": {
-                  "parser": "YYYY-MM-DD HH:mm:ss",
-                  "unit": "day",
-                  "displayFormats": {
-                     "day": "ddd"
-                  },
-                  "min": "2017-10-02 18:43:53",
-                  "max": "2017-10-09 18:43:53"
-               }
+            "type": "time",
+            "time": {
+                "format": "HH:MM:SS",
+                "min": minTime,  
+                "max": maxTime   
+            }
         }]
-      }}
+    }
+}
 }';
 
  echo 'https://quickchart.io/chart?w=500&h=300&c=' . $chartConfig;
