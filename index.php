@@ -14,7 +14,7 @@ $final_key = '['.implode(",", $a).']';
   $chartConfig = '{
   "type": "line",
   "data": {
-    "labels": '['.implode(",", $a).']',
+    "labels": [' . implode(',', $a) . '],
     "datasets": [{
       "label": "Users",
       "data": [' . implode(',', $b) . ']
