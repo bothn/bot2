@@ -15,7 +15,7 @@ $chartConfig = ' {
   "type": "line",
   "data": {
     "labels": [
-      new Date("' . implode(',', $a) . '")
+      "' . implode(',', $a) . '"
     ],
     "datasets": [
       {
