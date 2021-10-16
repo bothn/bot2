@@ -43,7 +43,7 @@ $chartConfig = '{
         "xAxes": [{
             "type": "time",
             "time": {
-                "forma": "HH:MM:SS",
+                "format": "HH:MM:SS",
                 "min": minTime,  
                 "max": maxTime   
             }
