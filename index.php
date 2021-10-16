@@ -44,9 +44,9 @@ $chartConfig = '{
       "xAxes": [{
         "type": "time",
         "time": {
-          "parser": "MM/DD/YYYY HH:mm",
+          "parser": "MM/DD/YYYY HH:mi",
           "displayFormats": {
-            "hour": "HH:MM:SS"
+            "hour": "HH:MI:SS"
           }
         }
       }]
