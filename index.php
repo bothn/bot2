@@ -18,6 +18,11 @@ $chartConfig = '{
       "label": "Users",
       "data": '.$exitosas .'
     }]
+  } , 
+  "options":{
+  "scales":{ 
+      "type":"time"
+            }
   }
   
 }';
