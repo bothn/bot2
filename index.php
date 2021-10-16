@@ -32,5 +32,5 @@ $chartConfigArr = array(
 );
 $chartConfig = json_encode($chartConfigArr);
  
-echo 'https://quickchart.io/chart?w=500&h=300&c=' .  urlencode($chartConfig);
+echo 'https://quickchart.io/chart?w=500&h=300&c=' .  $chartConfig;
 ?> 
