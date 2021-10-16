@@ -22,5 +22,5 @@ $chartConfig = '{
   
 }';
 
-echo $chartUrl = 'https://quickchart.io/chart?w=500&h=300&c=' . urlencode($chartConfig).;
+echo $chartUrl = 'https://quickchart.io/chart?w=500&h=300&c=' . urlencode($chartConfig);
 ?> 
