@@ -13,7 +13,7 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
 $chartConfig = '{
   "type": "line",
   "data": {
-    "labels":[2021,2022,2023,20,23],
+    "labels":'.$fecha .',
     "datasets": [{
       "label": "Users",
       "data": '.$exitosas .'
@@ -32,5 +32,5 @@ $chartConfig = '{
    
   
 }';
-echo $fecha;
+echo $exitosas;
 ?> 
