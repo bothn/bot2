@@ -11,47 +11,12 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
  
 $final_key = '['.implode(",", $a).']';
 
-$chartConfig = ' {
+$chartConfig = '{
   "type": "line",
   "data": {
-    "labels": [
-      "' . implode(',', $a) . '"
-    ],
     "datasets": [
       {
-        "label": "My First dataset",
-        "backgroundColor": "rgba(255, 99, 132, 0.5)",
-        "borderColor": "rgb(255, 99, 132)",
-        "fill": false,
-        "data": [
-          38,
-          -19,
-          35,
-          -2,
-          77,
-          78,
-          -93
-        ]
-      },
-      {
-        "label": "My Second dataset",
-        "backgroundColor": "rgba(54, 162, 235, 0.5)",
-        "borderColor": "rgb(54, 162, 235)",
-        "fill": false,
-        "data": [
-          18,
-          -7,
-          49,
-          86,
-          63,
-          -92,
-          -35
-        ]
-      },
-      {
-        "label": "Dataset with point data",
-        "backgroundColor": "rgba(75, 192, 192, 0.5)",
-        "borderColor": "rgb(75, 192, 192)",
+        "label": "Time series example",
         "fill": false,
         "data": [
           {
@@ -75,24 +40,14 @@ $chartConfig = ' {
     ]
   },
   "options": {
-    "title": {
-      "text": "Chart.js Time Scale"
-    },
     "scales": {
       "xAxes": [{
         "type": "time",
         "time": {
           "parser": "MM/DD/YYYY HH:mm",
-        },
-        "scaleLabel": {
-          "display": true,
-          "labelString": "Date"
-        }
-      }],
-      "yAxes": [{
-        "scaleLabel": {
-          "display": true,
-          "labelString": "value"
+          "displayFormats": {
+            "day": "MMM DD YYYY"
+          }
         }
       }]
     }
