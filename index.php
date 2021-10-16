@@ -44,8 +44,8 @@ $chartConfig = '{
             "type": "time",
             "time": {
                 "format": "HH:MM:SS",
-                "min": minTime,  
-                "max": maxTime   
+                "min": "minTime",  
+                "max": "maxTime"   
             }
         }]
     }
