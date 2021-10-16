@@ -18,7 +18,7 @@ $xc = $a;
 $chartConfigArr = array(
   'type' => 'line',
   'data' => array(
-    'labels' => array(2012, 2013, 2014, 2015, 2016),
+    'labels' => $a,
     'datasets' => array(
       array(
         'label' => 'Users',
