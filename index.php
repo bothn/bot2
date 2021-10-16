@@ -9,7 +9,7 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
  
 }
  
-$final_key = implode(",", $a);
+$final_key = '['.implode(",", $a).']';
  echo $final_key;
   
 ?> 
