@@ -38,18 +38,12 @@ $chartConfig = '{
         ]
       }
     ]
-  }, "options": {
-    "scales": {
+  },    "options": {
+      "scales": {
         "xAxes": [{
-            "type": "time",
-            "time": {
-                "format": "HH:MM:SS",
-                "min": minTime,  
-                "max": maxTime   
-            }
+          "type": "time"
         }]
-    }
-}
+      }}
 }';
 
  echo 'https://quickchart.io/chart?w=500&h=300&c=' . $chartConfig;
