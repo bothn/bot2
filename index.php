@@ -8,7 +8,7 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
  
 }
  $fecha= implode(",", $a);
- $exitosas= implode(",", $b);
+ $exitosas= '['.implode(",", $b).']';
 
 $chartConfig = '{
   "type": "line",
@@ -16,11 +16,11 @@ $chartConfig = '{
     "labels":[2012, 2013, 2014, 2015, 2016],
     "datasets": [{
       "label": "Users",
-      "data": [2012, 2013, 2014, 2015, 2016]
+      "data": '.$exitosas .'
     }]
   }
   
 }';
+echo $chartUrl = 'https://quickchart.io/chart?w=500&h=300&c=' . urlencode($chartConfig);
 
-echo $exitosas;
 ?> 
