@@ -8,30 +8,8 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
     $b[]= $pc["SUCCESS"]     ;
  
 }
- $fecha= '['.implode(",", $a).']';
- $exitosas= '['.implode(",", $b).']';
-
- $dates= implode("','", $a);
- $ok= implode(',', $b);
-
-$xc = $a;
-$df= $b;
-
-$data = array(120, 60, 50, 180, 120);
-
-$chartConfigArr = array(
-  'type' => 'bar',
-  'data' => array(
-    'labels' => $dates,
-    'datasets' => array(
-      array(
-        'label' => 'Users',
-        'data' => array(120, 60, 50, 180, 120),
-      )
-    )
-  )
-);
-$chartConfig = json_encode($chartConfigArr);
  
-echo 'https://quickchart.io/chart?w=500&h=300&c=' .  $chartConfig;
+$final_key = implode(",", $a);
+ echo $$final_key;
+  
 ?> 
