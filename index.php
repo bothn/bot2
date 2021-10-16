@@ -14,6 +14,7 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
  $ok= implode(',', $b);
 
 $xc = $a;
+$df= %b;
 
 $data = array(120, 60, 50, 180, 120);
 
@@ -23,7 +24,7 @@ $chartConfig = '{
     "labels": [' . implode(',', $xc) . '],
     "datasets": [{
       "label": "Users",
-      "data": [' . implode(',', $xc) . ']
+      "data": [' . implode(',', $df) . ']
     }]
   }
 }';
