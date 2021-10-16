@@ -18,11 +18,11 @@ $xc = $a;
 $chartConfigArr = array(
   'type' => 'bar',
   'data' => array(
-    'labels' => array(2012, 2013, 2014, 2015, 2016),
+    'labels' => array($dates),
     'datasets' => array(
       array(
         'label' => 'Users',
-        'data' => array(120, 60, 50, 180, 120),
+        'data' => array($dates),
       )
     )
   )
