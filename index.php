@@ -20,7 +20,7 @@ $data = array(120, 60, 50, 180, 120);
 $chartConfig = '{
   "type": "line",
   "data": {
-    "labels": [2012, 2013, 2014, 2015, 2016],
+    "labels": [' . implode(',', $xc) . '],
     "datasets": [{
       "label": "Users",
       "data": [' . implode(',', $xc) . ']
