@@ -17,7 +17,7 @@ $final_key = '['.implode(",", $a).']';
     "labels": $final_key,
     "datasets": [{
       "label": "Users",
-      "data": [' . implode(',', $data) . ']
+      "data": [' . implode(',', $b) . ']
     }]
   },,
   "options": {
