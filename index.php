@@ -43,7 +43,7 @@ $chartConfig = '{
         "xAxes": [{
             "type": "time",
             "time": {
-                "format": "HH:MM:SS" 
+                "format": "M/D/YYYY HH:MM:SS" 
             }
         }]
     }
