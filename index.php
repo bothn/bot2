@@ -46,7 +46,7 @@ $chartConfig = '{
         "time": {
           "parser": "MM/DD/YYYY HH:mm",
           "displayFormats": {
-            "day": "MMM DD YYYY"
+            "minute": "MMM DD YYYY  HH:mm"
           }
         }
       }]
