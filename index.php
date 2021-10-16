@@ -16,9 +16,9 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
 $xc = $a;
 
 $chartConfigArr = array(
-  'type' => 'bar',
+  'type' => 'line',
   'data' => array(
-    'labels' => array(2012, 2013, 2014, 2015, 2016),
+    'labels' => array(a, b, c, d, e),
     'datasets' => array(
       array(
         'label' => 'Users',
