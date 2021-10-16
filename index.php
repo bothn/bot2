@@ -15,19 +15,18 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
 
 $xc = $a;
 
-$chartConfigArr = array(
-  "type" => "bar",
-  "data" => array(
-    "labels" => array($dates),
-    "datasets" => array(
-      array(
-        "label" => "Users",
-        "data" => array($dates),
-      )
-    )
-  )
-);
-$chartConfig = json_encode($chartConfigArr);
+$data = array(120, 60, 50, 180, 120);
+
+$chartConfig = '{
+  "type": "bar",
+  "data": {
+    "labels": [2012, 2013, 2014, 2015, 2016],
+    "datasets": [{
+      "label": "Users",
+      "data": [' . implode(',', $data) . ']
+    }]
+  }
+}';
  
 echo 'https://quickchart.io/chart?w=500&h=300&c=' . $chartConfig;
 ?> 
