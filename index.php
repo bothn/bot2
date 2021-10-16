@@ -26,7 +26,7 @@ $chartCon2 = '{
 }';
 
 $chartConfigArr = array(
-  'type' => 'bar',
+  'type' => 'line',
 
     "options": {
     "scales": {
