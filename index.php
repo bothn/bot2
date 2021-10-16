@@ -22,7 +22,7 @@ $data = array(120, 60, 50, 180, 120);
 $chartConfigArr = array(
   'type' => 'bar',
   'data' => array(
-    'labels' => $xc,
+    'labels' => $df,
     'datasets' => array(
       array(
         'label' => 'Users',
