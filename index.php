@@ -38,19 +38,6 @@ $chartConfig = '{
         ]
       }
     ]
-  },
-  "options": {
-    "scales": {
-      "xAxes": [{
-        "type": "time",
-        "time": {
-          "parser": "MM/DD/YYYY h:mm a",
-          "displayFormats": {
-            "minute": "h:mm a"
-          }
-        }
-      }]
-    }
   }
 }';
 
