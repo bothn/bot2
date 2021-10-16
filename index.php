@@ -18,15 +18,7 @@ $chartConfig = '{
       "label": "Users",
       "data": '.$exitosas .'
     }]
-  } , 
-    "options": {
-    "scales": {
-      "xAxes": [{
-        "type": "time" 
-         
-      }]
-    }
-  } 
+  }
             
             
    
