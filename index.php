@@ -41,5 +41,5 @@ $chartConfig = '{
 
  $variable = 'https://quickchart.io/chart?w=500&h=300&c='.urlencode($chartConfig);
  
-var_dump($variable);
+ 
 ?> 
