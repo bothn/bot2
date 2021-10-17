@@ -16,11 +16,11 @@ $chartConfig = '{
   "data": {
      "labels": ["00:30", "02:30", "09:00", "15:00", "22:00"],
     "datasets": [
-      {
+       
         "label": "Time series example",
         "fill": false,
         "data": ["22","33","44","66","77"]  
-      }
+       
     ]
   },  "options": {
     "scales": {
