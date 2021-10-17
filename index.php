@@ -19,9 +19,7 @@ $chartConfig = '{
       {
         "label": "Time series example",
         "fill": false,
-        "data": [22,33,44,66,77]
-       
-         
+        "data": [22,33,44,66,77]  
       }
     ]
   },  "options": {
