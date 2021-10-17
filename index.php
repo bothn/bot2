@@ -14,28 +14,14 @@ $final_key = '['.implode(",", $a).']';
 $chartConfig = '{
   "type": "line",
   "data": {
+     "labels":[' . implode(',', $a) . '],
     "datasets": [
       {
         "label": "Time series example",
         "fill": false,
-        "data": [
-          {
-            "x": "09:08",
-            "y": -29
-          },
-          {
-            "x": "10:08",
-            "y": -34
-          },
-          {
-            "x": "12:08",
-            "y": -62
-          },
-          {
-            "x": "13:08",
-            "y": 1
-          }
-        ]
+        "data": [' . implode(',', $b) . ']
+       
+         
       }
     ]
   },  "options": {
