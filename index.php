@@ -20,34 +20,41 @@ $chartConfig = '{
         "fill": false,
         "data": [
           {
-            "x": "06/14/2020 09:08",
+            "x": "09:08",
             "y": -29
           },
           {
-            "x": "06/19/2020 10:08",
+            "x": "10:08",
             "y": -34
           },
           {
-            "x": "06/21/2020 12:08",
+            "x": "12:08",
             "y": -62
           },
           {
-            "x": "06/29/2020 13:08",
+            "x": "13:08",
             "y": 1
           }
         ]
       }
     ]
-  },   "options": {
+  },  "options": {
     "scales": {
-        "xAxes": [{
-            "type": "time",
-            "time": {
-                "format": "M/D/YYYY HH:MM:SS" 
-            }
-        }]
-    }
-}
+      "xAxes":[{
+  "type": "time",
+  "time": {
+    "format": "HH:mm",
+    "unit": "hour",
+    "unitStepSize": 1,
+    "displayFormats": {
+      "minute": "HH:mm", 
+      "hour": "HH:mm", 
+      "min": "00:00",
+      "max": "23:59"
+    },
+}}],
+    },
+  }
 }';
 
  echo 'https://quickchart.io/chart?w=500&h=300&c=' . $chartConfig;
