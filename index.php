@@ -38,6 +38,15 @@ $chartConfig = '{
     },
   }
 }';
-
- echo  $chartConfig;
+$options = array(
+        'http' => array(
+        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method'  => 'POST',
+        'content' => http_build_query($data),
+    )
+);
+$context  = stream_context_create($options);
+ $variable = 'https://quickchart.io/chart?w=500&h=300&c='.$chartConfig;
+$result = file_get_contents($variable, false, $context);
+var_dump($result);
 ?> 
