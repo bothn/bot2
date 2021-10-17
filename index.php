@@ -39,7 +39,7 @@ $chartConfig = '{
   }
 }';
 
- echo 'https://quickchart.io/chart?w=500&h=300&c='.urlencode($chartConfig);
+ echo getShortUrl($chartConfig);
  
  
 ?> 
