@@ -11,7 +11,7 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
  
  
 
-$chartConfig = '{"chart":{
+$chartConfig = '{
   "type": "line",
   "data": {
      "labels": ["' . implode('","', $a) . '"],
@@ -37,7 +37,7 @@ $chartConfig = '{"chart":{
 }}],
     },
   }
-} }';
+} ';
 
 $post_data = json_encode($chartConfig, JSON_UNESCAPED_SLASHES);
  
