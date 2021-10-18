@@ -47,5 +47,5 @@ $postdata = '{
 }';
  
  $result = file_get_contents('https://quickchart.io/chart/create', false, $postdata);
- echo $result;
+
 ?> 
