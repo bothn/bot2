@@ -18,7 +18,7 @@ $chartConfig = '{
     "datasets": [{
         "label": "Time series example",
         "fill": false,
-        "data": ["' . implode('","', $b) . '"]  ,
+        "data": ["' . implode('","', $b) . '"]  
     }]
   },  "options": {
     "scales": {
@@ -33,9 +33,9 @@ $chartConfig = '{
       "hour": "HH:mm", 
       "min": "00:00",
       "max": "23:59"
-    },
-}}],
-    },
+    }
+}}]
+    }
   }
 } ';
 
