@@ -46,15 +46,12 @@ $postdata = '{
   "backgroundColor": "transparent",
 }';
  
-$options = array(
-        'http' => array(
-        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
-        'method'  => 'POST',
-        'content' => http_build_query($postdata),
-    )
-);
-
-$context  = stream_context_create($options);
-$result = file_get_contents('https://quickchart.io/chart/create', false, $context);
-var_dump($result);
+ 
+$ch = curl_init('https://quickchart.io/chart/create');
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $postdata);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
+curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json")); 
+$response = curl_exec($ch);
+print_r($response);
 ?> 
