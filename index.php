@@ -50,5 +50,5 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));
 $response = curl_exec($ch);
 print_r($response);
 
-echo 'https://quickchart.io/chart?c='.$chartConfig;
+echo 'https://quickchart.io/chart?c='.$post_data ;
 ?> 
