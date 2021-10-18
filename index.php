@@ -19,23 +19,7 @@ $chartConfig = '{"chart": {
         "fill": false,
         "data": ["' . implode('","', $b) . '"]  ,
     }]
-  },  "options": {
-    "scales": {
-      "xAxes":[{
-  "type": "time",
-  "time": {
-    "format": "HH:mm",
-    "unit": "minute",
-    "unitStepSize": 1,
-    "displayFormats": {
-      "minute": "HH:mm", 
-      "hour": "HH:mm", 
-      "min": "00:00",
-      "max": "23:59"
-    },
-}}],
-    },
-  }
+  }  
 }}';
 
 $post_data = json_encode($chartConfig, JSON_UNESCAPED_SLASHES);
