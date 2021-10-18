@@ -25,7 +25,7 @@ $chartConfig = '{
   "type": "time",
   "time": {
     "format": "HH:mm",
-    "unit": "hour",
+    "unit": "minute",
     "unitStepSize": 1,
     "displayFormats": {
       "minute": "HH:mm", 
