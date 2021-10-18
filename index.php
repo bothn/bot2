@@ -17,7 +17,7 @@ $chartConfig = '{"chart": {
     "datasets": [{
         "label": "Time series example",
         "fill": false,
-        "data": [' . implode('","', $b) . ']  
+        "data": ["' . implode('","', $b) . '"]  
     }]
   }  
 }}';
