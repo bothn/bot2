@@ -40,7 +40,7 @@ $chartConfig = '{
 }';
 
 $postdata = '{
-  "chart": $chartConfig,
+  "chart": '.$chartConfig.',
   "width": 500,
   "height": 300,
   "backgroundColor": "transparent",
