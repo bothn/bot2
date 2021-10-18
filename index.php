@@ -46,6 +46,15 @@ $postdata = '{
   "backgroundColor": "transparent",
 }';
  
- $result = file_get_contents('https://quickchart.io/chart/create', false, $postdata);
+$options = array(
+        'http' => array(
+        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method'  => 'POST',
+        'content' => http_build_query($postdata),
+    )
+);
 
+$context  = stream_context_create($options);
+$result = file_get_contents('https://quickchart.io/chart/create', false, $context);
+var_dump($result);
 ?> 
