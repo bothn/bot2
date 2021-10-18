@@ -39,17 +39,12 @@ $chartConfig = '{"chart":{
   }
 } }';
 
-$postdata = '{
-  "chart": '.$chartConfig.',
-  "width": 500,
-  "height": 300,
-  "backgroundColor": "transparent",
-}';
+$post_data = json_encode($chartConfig, JSON_UNESCAPED_SLASHES);
  
  $test='{"chart": {"type": "bar", "data": {"labels": ["Hello", "World"], "datasets": [{"label": "Foo", "data": [1, 2]}]}}}';
 $ch = curl_init('https://quickchart.io/chart/create');
 curl_setopt($ch, CURLOPT_POST, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $chartConfig);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
 curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json")); 
 $response = curl_exec($ch);
