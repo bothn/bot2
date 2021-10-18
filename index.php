@@ -10,7 +10,6 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
 }
  
  
-
 $chartConfig = '{
   "type": "line",
   "data": {
@@ -18,7 +17,7 @@ $chartConfig = '{
     "datasets": [{
         "label": "Time series example",
         "fill": false,
-        "data": ["' . implode('","', $b) . '"]  
+        "data": ["' . implode('","', $b) . '"]  ,
     }]
   },  "options": {
     "scales": {
@@ -33,9 +32,9 @@ $chartConfig = '{
       "hour": "HH:mm", 
       "min": "00:00",
       "max": "23:59"
-    }
-}}]
-    }
+    },
+}}],
+    },
   }
 } ';
 
@@ -50,5 +49,5 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));
 $response = curl_exec($ch);
 print_r($response);
 
-echo 'https://quickchart.io/chart?c='.$post_data ;
+echo 'https://quickchart.io/chart?c='.$chartConfig ;
 ?> 
