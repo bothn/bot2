@@ -39,7 +39,13 @@ $chartConfig = '{
   }
 }';
 
- echo getShortUrl($chartConfig);
+$postdata = '{
+  "chart": $chartConfig,
+  "width": 500,
+  "height": 300,
+  "backgroundColor": "transparent",
+}';
  
- 
+ $result = file_get_contents('https://quickchart.io/chart/create', false, $postdata);
+ echo $result;
 ?> 
