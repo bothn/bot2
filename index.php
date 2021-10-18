@@ -11,7 +11,7 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
  
  
 
-$chartConfig = '{
+$chartConfig = '{"chart":{
   "type": "line",
   "data": {
      "labels": ["' . implode('","', $a) . '"],
@@ -37,7 +37,7 @@ $chartConfig = '{
 }}],
     },
   }
-}';
+} }';
 
 $postdata = '{
   "chart": '.$chartConfig.',
@@ -49,7 +49,7 @@ $postdata = '{
  $test='{"chart": {"type": "bar", "data": {"labels": ["Hello", "World"], "datasets": [{"label": "Foo", "data": [1, 2]}]}}}';
 $ch = curl_init('https://quickchart.io/chart/create');
 curl_setopt($ch, CURLOPT_POST, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $test);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $chartConfig);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
 curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json")); 
 $response = curl_exec($ch);
