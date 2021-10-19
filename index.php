@@ -20,13 +20,22 @@ $chartConfig = '{"chart":{
  
  
  {
-        "label": "Dataset",
+        "label": "Dataset2",
 
               "borderWidth": 0,
       "pointRadius": 0,
         "fill": false,
         "data": [
 '. implode(',', $b).'
+        ]
+      } , {
+        "label": "Dataset",
+
+              "borderWidth": 0,
+      "pointRadius": 0,
+        "fill": false,
+        "data": [
+'. implode(',', $a).'
         ]
       }      
 
