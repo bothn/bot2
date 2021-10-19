@@ -29,33 +29,24 @@ $chartConfig = '{"chart":{
         ]
       }      
 
-    ]
-    
-    
-  
-  
-  },   
-    
-  "options": {
-    "title": {
-      "text": "Chart.js Time Scale"
-    },
+    ],"options": {
     "scales": {
       "xAxes": [{
-        "type": "time", 
-        "time": {     
-          "parser": "MM/DD/YYYY HH:mm" 
-          
-        }
-      }],
-      "yAxes": [{
-        "scaleLabel": {
-          "display": true,
-          "labelString": "value"
+        "type": "time",
+        "time": {
+          "parser": "MM/DD/YYYY HH:mm",
+          "displayFormats": {
+            "day": "MMM DD YYYY"
+          }
         }
       }]
     }
   }
+    
+    
+  
+  
+  } 
 }}';
  $post_data = json_encode($chartConfig, JSON_UNESCAPED_SLASHES);
  
