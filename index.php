@@ -11,7 +11,7 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
 }
  
  
-$chartConfig = '"c":{
+$chartConfig = '{"chart":{
   "type": "line",
  
   "data": {
@@ -56,7 +56,7 @@ $chartConfig = '"c":{
       }]
     }
   }
-}';
+}}';
  $post_data = json_encode($chartConfig, JSON_UNESCAPED_SLASHES);
  
  $ch = curl_init('https://quickchart.io/chart/create');
