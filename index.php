@@ -13,11 +13,19 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
 $chartConfig = '{
   "type": "line",
   "data": {
-    "datasets": [{
+    "datasets": [
+          {
         "label": "Time series example",
         "fill": false,
         "data": [' . implode(',', $a) . '],
-    }]
+        },
+        {
+        "label": "segundo",
+        "fill": false,
+        "data": [' . implode(',', $b) . '],
+        }
+    
+    ]
   },  "options": {
     "scales": {
       "xAxes":[{
