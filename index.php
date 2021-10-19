@@ -29,7 +29,8 @@ $chartConfig = '{"chart":{
         ]
       }      
 
-    ],"options": {
+    ],
+  "options": {
     "scales": {
       "xAxes": [{
         "type": "time",
@@ -42,11 +43,6 @@ $chartConfig = '{"chart":{
       }]
     }
   }
-    
-    
-  
-  
-  } 
 }}';
  $post_data = json_encode($chartConfig, JSON_UNESCAPED_SLASHES);
  
