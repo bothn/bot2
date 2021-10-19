@@ -33,5 +33,5 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));
 $response = curl_exec($ch);
 print_r($response);
 
-echo 'https://quickchart.io/chart?w=500&h=300&c='.$chartConfig ;
+echo $chartConfig ;
 ?> 
