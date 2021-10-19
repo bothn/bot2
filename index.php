@@ -43,7 +43,7 @@ $chartConfig = '{"chart":{
     "scales": {
       "xAxes": [{
         "type": "time", 
-        "time": {     "unitStepSize": "300",
+        "time": {     
           "parser": "MM/DD/YYYY HH:mm" 
           
         }
