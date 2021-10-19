@@ -4,8 +4,8 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
 
 
   foreach ($weather as $pc) { 
-    $a[]= "x:".$pc["FECHA_HXH"]     ;
-    $b[]= "y:".$pc["SUCCESS"]     ;
+    $a[]= "x:".$pc["FECHA_HXH"]",y:".$pc["SUCCESS"]      ;
+  
  
 }
  
@@ -16,7 +16,7 @@ $chartConfig = '{
     "datasets": [{
         "label": "Time series example",
         "fill": false,
-        "data": ["' . implode('","', $a) . implode('","', $b) . '"]  ,
+        "data": ["'  implode('","', $a) . '"]  ,
     }]
   },  "options": {
     "scales": {
