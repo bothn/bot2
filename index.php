@@ -29,7 +29,7 @@ $chartConfig = '{"chart":{
         ]
       }      
 
-    ],
+    ] },
   "options": {
     "scales": {
       "xAxes": [{
