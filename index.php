@@ -9,34 +9,15 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
  
 }
  
-
 $chartConfig = '{
   "type": "line",
   "data": {
-    "datasets": [
-      {
+     "labels": ["' . implode('","', $a) . '"],
+    "datasets": [{
         "label": "Time series example",
         "fill": false,
-        "data": [
-          {
-            "x": "09:08",
-            "y": -29
-          },
-          {
-            "x": "10:08",
-            "y": -34
-          },
-          {
-            "x": "12:08",
-            "y": -62
-          },
-          {
-            "x": "13:08",
-            "y": 1
-          }
-        ]
-      }
-    ]
+        "data": ["' . implode('","', $b) . '"]  ,
+    }]
   },  "options": {
     "scales": {
       "xAxes":[{
@@ -44,7 +25,7 @@ $chartConfig = '{
   "time": {
     "format": "HH:mm",
     "unit": "hour",
-    "unitStepSize": 1,
+    "unitStepSize": 300,
     "displayFormats": {
       "minute": "HH:mm", 
       "hour": "HH:mm", 
@@ -54,7 +35,7 @@ $chartConfig = '{
 }}],
     },
   }
-}';
+} ';
 
 $post_data = json_encode($chartConfig, JSON_UNESCAPED_SLASHES);
  
