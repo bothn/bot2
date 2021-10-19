@@ -11,7 +11,7 @@ $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/r
 }
  
  
-$chartConfig = '{"chart":{
+$chartConfig = '{"width":700,"height":700 "chart":{
   "type": "line",
  
   "data": {
