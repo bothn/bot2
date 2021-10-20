@@ -64,11 +64,6 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json")); 
 $response = curl_exec($ch);
  print_r($response);
-  $http_status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-$info = curl_getinfo($ch);
-
-# get the HTTP status code for our session
-print_r( $info);
-$httpCode = curl_getinfo($ch , CURLINFO_HTTP_CODE); 
- ECHO $http_status_code;
+ $results=json_decode($response, true);
+ ECHO $results;
 ?> 
