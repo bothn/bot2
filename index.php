@@ -76,12 +76,11 @@ $response = curl_exec($ch);
 $grafica = json_decode($response);
   $xc=$grafica->url;
 $currentsr = json_decode(file_get_contents ("http://192.168.0.238:1099/reportes/bot/activaciones/Successrate.php"),true);
-  foreach ($weather as $pc) { 
+  foreach ($currentsr as $pc) { 
     $CURRENTSR= $pc["SR"]." ";
  
 }
- $test=urlencode("<b><pre>Activaciones Prepago</pre></b>").urlencode("\n").
-      urlencode("<pre>Current Success Rate(%): "  .$CURRENTSR."</pre>").urlencode("\n");
+ $test=urlencode("<pre>Current Success Rate(%): "  .$CURRENTSR."</pre>").urlencode("\n");
  
 
 
