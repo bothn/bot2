@@ -77,8 +77,8 @@ $currentsr = json_decode(file_get_contents ("http://192.168.0.238:1099/reportes/
     $CURRENTSR= $pc["SR"]." ";
  
 }
- $test=("<b><pre>Activaciones Prepago</pre></b>").("\n").
-      ("<pre>Current Success Rate(%): "  .$CURRENTSR."</pre>").("\n");
+ $test=urlencode("<b><pre>Activaciones Prepago</pre></b>").urlencode("\n").
+      urlencode("<pre>Current Success Rate(%): "  .$CURRENTSR."</pre>").urlencode("\n");
  
 
 
