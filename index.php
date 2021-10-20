@@ -73,8 +73,6 @@ $chat_id="-599009724";
  $photo=$grafica2;
 echo $chat_id;
 echo $path;
-file_get_contents($path."/sendPhoto?chat_id=".$chatId."&photo=".$grafica2);  
- 
 
  
 ?> 
