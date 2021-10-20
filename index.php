@@ -73,9 +73,9 @@ $xr  = json_decode(print_r($response),true);
 
   foreach ($xr as $pc) { 
     
-    $c[]= $pc["URL"]     ;
+    $= $pc["URL"]     ;
   
  
 }
-
+ ECHO $c;
 ?> 
