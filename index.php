@@ -65,8 +65,13 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));
 $response = curl_exec($ch);
  print_r($response);
  
-
-echo 'HTTP code: ' . $responsep["url"];
+  foreach ($response as $dc) { 
+    
+    $a= $dc["FECHA_HXH"]     ;
+    
+ 
+}
+echo 'HTTP code: ' . $a;
  
  
 ?> 
