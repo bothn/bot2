@@ -76,11 +76,11 @@ $response = curl_exec($ch);
 $grafica = json_decode($response);
   $xc=$grafica->url;
 $currentsr = json_decode(file_get_contents ("http://192.168.0.238:1099/reportes/bot/activaciones/Successrate.php"),true);
-  foreach ($currentsr as $pc) { 
-    $CURRENTSR= $pc["SR"]." ";
+  foreach ($currentsr as $dc) { 
+    $Succ= $dc["SR"];
  
 }
- $test=urlencode("<pre>Current Success Rate(%): "  .$CURRENTSR."</pre>").urlencode("\n");
+ $test=urlencode("<pre>Current Success Rate(%): "  .$Succ."</pre>").urlencode("\n");
  
 
 
