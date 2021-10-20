@@ -7,7 +7,7 @@ $chatId = $update["message"]["chat"]["id"];
 $message = $update["message"]["text"];
 
 if (strpos($message, '/s') === 0) {
-  
+  $path="https://api.telegram.org/bot2069143370:AAGiUdwcQETanfLBHtZ32S621Hpqwp8sT8E";
 $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/reports_kpis_h/test3json.php"),true);
   
 
@@ -78,7 +78,7 @@ $grafica = json_decode($response);
 
 
  $xc=$grafica->url;
- 
+ $chat_id="-599009724";
 file_get_contents($path."/sendPhoto?chat_id=".$chat_id."&photo=".$xc);
  
   
