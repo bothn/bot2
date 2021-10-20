@@ -72,13 +72,18 @@ $response = curl_exec($ch);
   
 $grafica = json_decode($response);
  
-
+$currentsr = json_decode(file_get_contents ("http://192.168.0.238:1099/reportes/bot/activaciones/Successrate.php"),true);
+  foreach ($weather as $pc) { 
+    $CURRENTSR= $pc["SR"]." ";
  
-
+}
+ $caption=urlencode("<b><pre>Activaciones Prepago</pre></b>").urlencode("\n").
+      urlencode("<pre>Current Success Rate(%): "  .$CURRENTSR."</pre>").urlencode("\n").
+ 
 
  $xc=$grafica->url;
  $chat_id="-599009724";
-file_get_contents($path."/sendPhoto?chat_id=".$chat_id."&photo=".$xc."&caption=informacion de activaciones prepago");
+file_get_contents($path."/sendPhoto?chat_id=".$chat_id."&photo=".$xc."&caption=".$caption);
  
   
   
