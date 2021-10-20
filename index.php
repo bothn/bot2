@@ -76,7 +76,7 @@ $grafica = json_decode($response);
 
  
 
-$chat_id="-599009724";
+
  $xc=$grafica->url;
  
 file_get_contents($path."/sendPhoto?chat_id=".$chat_id."&photo=".$xc);
