@@ -44,7 +44,7 @@ $chartConfig = '{"width":800,"height":300, "chart":{
     "scales": {
       "xAxes": [{
         "type": "time",
-        "time": {"unitStepSize": 1,
+        "time": {"unitStepSize": 1,"unit":"minute",
           "parser": "MM/DD/YYYY HH:mm",
           "displayFormats": {
             "day": "MMM DD YYYY"
