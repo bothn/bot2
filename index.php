@@ -75,7 +75,7 @@ $response = curl_exec($ch);
   
 $grafica = json_decode($response);
   $xc=$grafica->url;
-$currentsr = json_decode(file_get_contents ("http://192.168.0.238:1099/reportes/bot/activaciones/Successrate.php"),true);
+$currentsr = json_decode(file_get_contents ("http://190.4.63.192/reportes/bot/activaciones/Successrate.php"),true);
   foreach ($currentsr as $dc) { 
     $Su=$dc["SR"];
  
