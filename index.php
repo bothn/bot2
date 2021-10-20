@@ -67,7 +67,7 @@ $response = curl_exec($ch);
   
  
 
-  foreach ($response as $dc) { 
+  foreach ($xc as $dc) { 
     
     $c= $dc["url"]   ;
  
