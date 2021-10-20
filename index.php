@@ -66,16 +66,6 @@ $response = curl_exec($ch);
 print_r($response);
   
 
-$xr  = json_decode(print_r($response),true);
-  
-
-
-
-  foreach ($xr as $pc) { 
-    
-    $c= $pc["URL"]     ;
-  
- 
-}
- ECHO $c;
+$httpCode = curl_getinfo($ch , CURLINFO_HTTP_CODE); 
+ ECHO $httpCode;
 ?> 
