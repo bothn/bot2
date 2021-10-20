@@ -67,7 +67,7 @@ $response = curl_exec($ch);
   
  
 
- $httpcode = curl_getinfo($ch, CURLINFO_REDIRECT_URL);
+ $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
  echo $httpcode;
  
 ?> 
