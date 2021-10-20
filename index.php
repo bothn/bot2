@@ -72,6 +72,6 @@ $path="https://api.telegram.org/bot2069143370:AAGiUdwcQETanfLBHtZ32S621Hpqwp8sT8
 $chat_id="-599009724";
  
  
-file_get_contents($path."/sendPhoto?chat_id=-599009724&photo=". $grafica>url);
+file_get_contents($path."/sendPhoto?chat_id=-599009724&photo=".$xc);
  
 ?> 
