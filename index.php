@@ -77,13 +77,13 @@ $currentsr = json_decode(file_get_contents ("http://192.168.0.238:1099/reportes/
     $CURRENTSR= $pc["SR"]." ";
  
 }
- $caption=("<b><pre>Activaciones Prepago</pre></b>").("\n").
+ $test=("<b><pre>Activaciones Prepago</pre></b>").("\n").
       ("<pre>Current Success Rate(%): "  .$CURRENTSR."</pre>").("\n").
  
 
  $xc=$grafica->url;
  $chat_id="-599009724";
-file_get_contents($path."/sendPhoto?chat_id=".$chat_id."&photo=".$xc."&caption=informacion de activaciones prepago".$caption);
+file_get_contents($path."/sendPhoto?chat_id=".$chat_id."&photo=".$xc."&caption=".$test);
  
   
   
