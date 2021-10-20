@@ -65,14 +65,9 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));
 $response = curl_exec($ch);
  $xc=print_r($response);
   
- $dcx='['.$xc. ']'
  
-   foreach ($dcx as $dc) { 
-    
-    $p= $dc["url"]  ;
-   
  
-}
-echo $p;
 
+echo $response->url; 
+ 
 ?> 
