@@ -41,10 +41,7 @@ $chartConfig = '{"width":900,"height":200, "chart":{
 
     ] },
   "options": {    
-  title: {
-      "display": true,
-      "text": "Acctivaciones de Simcard por minuto"
-    },
+ 
     "scales": {
       "xAxes": [{
         "type": "time",
