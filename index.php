@@ -94,4 +94,5 @@ file_get_contents($path."/sendPhoto?chat_id=-599009724&photo=".$xc."&caption=".$
   
   
    }
+file_get_contents($path."/sendPhoto?chat_id=-599009724&photo=https://logodownload.org/wp-content/uploads/2018/02/tigo-logo.png"  )
 ?> 
