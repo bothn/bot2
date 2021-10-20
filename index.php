@@ -71,7 +71,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));
 $response = curl_exec($ch);
   
 $grafica = json_decode($response);
- 
+  $xc=$grafica->url;
 $currentsr = json_decode(file_get_contents ("http://192.168.0.238:1099/reportes/bot/activaciones/Successrate.php"),true);
   foreach ($weather as $pc) { 
     $CURRENTSR= $pc["SR"]." ";
@@ -81,9 +81,9 @@ $currentsr = json_decode(file_get_contents ("http://192.168.0.238:1099/reportes/
       ("<pre>Current Success Rate(%): "  .$CURRENTSR."</pre>").("\n").
  
 
- $xc=$grafica->url;
+
  $chat_id="-599009724";
-file_get_contents($path."/sendPhoto?chat_id=".$chat_id."&photo=".{$grafica->url}."&caption=".$test);
+file_get_contents($path."/sendPhoto?chat_id=".$chat_id."&photo=".$xc."&caption=".$test);
  
   
   
