@@ -65,10 +65,10 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));
 $response = curl_exec($ch);
  print_r($response);
 
-$responseInfo = curl_getinfo($response);
+$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+curl_close($ch);
 
-$httpResponseCode = $responseInfo['url'];
-echo $httpResponseCode;
+echo 'HTTP code: ' . $httpcode;
  
- ECHO $p;
+ 
 ?> 
