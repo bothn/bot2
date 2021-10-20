@@ -45,7 +45,7 @@ $chartConfig = '{"width":900,"height":200, "chart":{
       "title": {
         "display": true,
         "text": "Chart.js Bar Chart"
-      },
+      }},
     "scales": {
       "xAxes": [{
         "type": "time",
