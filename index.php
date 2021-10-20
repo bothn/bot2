@@ -41,11 +41,8 @@ $chartConfig = '{"width":900,"height":200, "chart":{
 
     ] },
   "options": {    
- "responsive": true,
-    "tooltips": {
-      "mode": "index",
-      "intersect": true
-    },
+ "responsive": true 
+ 
     "scales": {
       "xAxes": [{
         "type": "time",
