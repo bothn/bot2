@@ -76,5 +76,5 @@ file_get_contents($path."/sendPhoto?chat_id=".$chatId."&photo=".$grafica2);
 echo $photo;
 echo $chat_id;
 echo $path;
-echo file_get_contents($path."/sendPhoto?chat_id=".$chatId."&photo=".$grafica2);
+ 
 ?> 
