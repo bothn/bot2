@@ -68,6 +68,6 @@ $response = curl_exec($ch);
  
  
 
-echo $response->url; 
+echo $xc->url; 
  
 ?> 
