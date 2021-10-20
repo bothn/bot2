@@ -80,7 +80,7 @@ $currentsr = json_decode(file_get_contents ("http://190.4.63.192/reportes/bot/ac
     $Su=$dc["SR"];
  
 }
- $test=urlencode("<b><pre>Activaciones prepago</b>").urlencode("\n").
+ $test=urlencode("<b><pre>Activaciones prepago</pre></b>").urlencode("\n").
   urlencode("<pre>Current Success Rate(%): "  .$Su."%</pre>").urlencode("\n");
  
 
