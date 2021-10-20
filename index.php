@@ -65,9 +65,14 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));
 $response = curl_exec($ch);
  $xc=print_r($response);
   
+ $xc='['.$response. ']'
  
+   foreach ($xc as $dc) { 
+    
+    $p= $dc["url"]  ;
+   
+ 
+}
+echo $p;
 
- $httpcode = curl_getinfo($ch, CURLINFO_HEADER_OUT);
- echo $httpcode;
- 
 ?> 
