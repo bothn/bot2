@@ -38,6 +38,14 @@ $chartConfig = '{"width":900,"height":200, "chart":{
 
     ] },
   "options": {    
+      "plugins": {
+      "legend": {
+        "position": "top",
+      },
+      "title": {
+        "display": true,
+        "text": "Chart.js Bar Chart"
+      },
     "scales": {
       "xAxes": [{
         "type": "time",
