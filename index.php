@@ -22,7 +22,7 @@ $chartConfig = '{"width":900,"height":200, "chart":{
  {
         "label": "Intentos",
 
-              "borderWidth": 2,
+              "borderWidth": 1,
       "pointRadius": 0,
         "fill": "start",
         "data": [
@@ -31,7 +31,7 @@ $chartConfig = '{"width":900,"height":200, "chart":{
       } , {
         "label": "Exitosos",
 
-              "borderWidth": 2,
+              "borderWidth": 1,
       "pointRadius": 0,
         "fill": false,
         "data": [
@@ -41,8 +41,6 @@ $chartConfig = '{"width":900,"height":200, "chart":{
 
     ] },
   "options": {    
- 
- 
     "scales": {
       "xAxes": [{
         "type": "time",
