@@ -1,6 +1,9 @@
 <?php
+
+  
 $weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/reports_kpis_h/test3json.php"),true);
   
+
 
 
   foreach ($weather as $pc) { 
@@ -62,4 +65,17 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));
 $response = curl_exec($ch);
 print_r($response);
   
+
+$xr  = json_decode(print_r($response),true);
+  
+
+
+
+  foreach ($xr as $pc) { 
+    
+    $c[]= $pc["URL"]     ;
+  
+ 
+}
+
 ?> 
