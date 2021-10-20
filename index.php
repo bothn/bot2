@@ -63,11 +63,11 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $chartConfig );
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
 curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json")); 
 $response = curl_exec($ch);
- print_r($response);
+ $xc=print_r($response);
   
  
 
-  foreach ($response as $dc) { 
+  foreach ($xc as $dc) { 
     
     $c= $dc["url"]   ;
  
