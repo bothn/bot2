@@ -64,11 +64,9 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json")); 
 $response = curl_exec($ch);
  print_r($response);
+ 
 
-$httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-echo 'HTTP code: ' . $httpcode;
+echo 'HTTP code: ' . $responsep["url"];
  
  
 ?> 
