@@ -40,7 +40,11 @@ $chartConfig = '{"width":900,"height":200, "chart":{
       }      
 
     ] },
-  "options": {
+  "options": {    
+  title: {
+      "display": true,
+      "text": "Acctivaciones de Simcard por minuto",
+    },
     "scales": {
       "xAxes": [{
         "type": "time",
@@ -64,5 +68,5 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));
 $response = curl_exec($ch);
 print_r($response);
  
-echo $chartConfig ;
+echo $response ;
 ?> 
