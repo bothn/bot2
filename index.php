@@ -20,18 +20,18 @@ $chartConfig = '{"width":700,"height":700, "chart":{
  
  
  {
-        "label": "Dataset2",
+        "label": "Intentos",
 
-              "borderWidth": 0,
+              "borderWidth": 1,
       "pointRadius": 0,
         "fill": false,
         "data": [
 '. implode(',', $b).'
         ]
       } , {
-        "label": "Dataset",
+        "label": "Exitosos",
 
-              "borderWidth": 0,
+              "borderWidth": 1,
       "pointRadius": 0,
         "fill": false,
         "data": [
