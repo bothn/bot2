@@ -67,7 +67,7 @@ $response = curl_exec($ch);
  
   foreach ($response as $dc) { 
     
-    $a= $dc["FECHA_HXH"]     ;
+    $a= $dc["url"]     ;
     
  
 }
