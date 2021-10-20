@@ -67,12 +67,7 @@ $response = curl_exec($ch);
   
  
 
-  foreach ($xc as $dc) { 
-    
-    $c= $dc["url"]   ;
- 
- 
-}
- echo $c;
+ $httpcode = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
+ echo $httpcode;
  
 ?> 
