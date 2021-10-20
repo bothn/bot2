@@ -67,5 +67,5 @@ $xc=print_r($response);
   
 
 $httpCode = curl_getinfo($ch , CURLINFO_HTTP_CODE); 
- ECHO $xc["URL"];
+ ECHO $xc["url"];
 ?> 
