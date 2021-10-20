@@ -63,9 +63,9 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $chartConfig );
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
 curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json")); 
 $response = curl_exec($ch);
- $xc=print_r($response);
+ $xdfc=print_r($response);
   
- 
+ $xc = json_decode($response);
  
 
 echo $xc->url; 
