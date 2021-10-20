@@ -41,7 +41,9 @@ $chartConfig = '{"width":900,"height":200, "chart":{
 
     ] },
   "options": {    
- "responsive": true 
+ "responsive": true ,    "interaction": {
+      "intersect": false,
+    },
  
     "scales": {
       "xAxes": [{
