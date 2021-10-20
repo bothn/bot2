@@ -47,7 +47,10 @@ $chartConfig = '{"width":900,"height":200, "chart":{
 
     ] },
   "options": {    
- 
+     "title": {
+      "display": true,
+      "text": "Activaciones prepago",
+    },
     "scales": {
       "xAxes": [{
         "type": "time",
