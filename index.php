@@ -71,6 +71,7 @@ $grafica = json_decode($response);
 $path="https://api.telegram.org/bot2069143370:AAGiUdwcQETanfLBHtZ32S621Hpqwp8sT8E";
 $chat_id="-599009724";
  $xc=$grafica->url;
- echo $xc;
-
+ 
+file_get_contents($path."/sendPhoto?chat_id=-599009724&photo=".$xc);
+ 
 ?> 
