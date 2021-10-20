@@ -67,7 +67,7 @@ $response = curl_exec($ch);
 $grafica = json_decode($response);
  
 
-$grafica2=$grafica->url; 
+$grafica2={$grafica->url}; 
 
 
  
