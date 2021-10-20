@@ -65,13 +65,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));
 $response = curl_exec($ch);
  print_r($response);
  
-  foreach ($response as $dc) { 
-    
-    $a= $dc["url"]     ;
-    
- 
-}
-echo 'HTTP code: ' . $a;
+
  
  
 ?> 
