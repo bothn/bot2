@@ -64,13 +64,11 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json")); 
 $response = curl_exec($ch);
  print_r($response);
- $results=json_decode($response, true);
 
-  foreach ($weather as $pc) { 
-    
-    $p= $pc["url"]  ;
+$responseInfo = curl_getinfo($response);
+
+$httpResponseCode = $responseInfo['url'];
+echo $httpResponseCode;
  
- 
-}
  ECHO $p;
 ?> 
