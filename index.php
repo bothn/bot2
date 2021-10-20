@@ -69,9 +69,9 @@ $grafica = json_decode($response);
 
 $grafica2= $grafica->url; 
 $path = "https://api.telegram.org/bot1981081794:AAG3LTrHyuTEAk3bcoSAcATP7CJU3nBWyP0";
-$chat_id="-599009724"
+$chat_id="-599009724";
  $photo=$grafica2;
 
-file_get_contents($path."/sendPhoto?chat_id=".$chatId."&photo=".$grafica2);  
+file_get_contents($path."/sendPhoto?chat_id=".$chatId."&photo=".$photo);  
 
 ?> 
