@@ -53,7 +53,7 @@ $chartConfig = '{"width":900,"height":200, "chart":{
   }
 }}';
  $post_data = json_encode($chartConfig, JSON_UNESCAPED_SLASHES);
- 
+ $title='?title="Activaciones por minuto"';
  $ch = curl_init('https://quickchart.io/chart/create');
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, $chartConfig );
