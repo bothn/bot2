@@ -67,10 +67,10 @@ $response = curl_exec($ch);
 $grafica = json_decode($response);
  
 
-$grafica2= $grafica->url; 
-$path = "https://api.telegram.org/bot1981081794:AAG3LTrHyuTEAk3bcoSAcATP7CJU3nBWyP0";
+$grafica2=$grafica->url; 
+$path="https://api.telegram.org/bot1981081794:AAG3LTrHyuTEAk3bcoSAcATP7CJU3nBWyP0";
 $chat_id="-599009724";
- $photo=$grafica2;
+$photo=$grafica2;
 echo $chat_id;
 echo $path;
 
