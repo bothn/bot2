@@ -65,5 +65,12 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type: application/json"));
 $response = curl_exec($ch);
  print_r($response);
  $results=json_decode($response, true);
- ECHO $results;
+
+  foreach ($weather as $pc) { 
+    
+    $p= $pc["url"]  ;
+ 
+ 
+}
+ ECHO $p;
 ?> 
