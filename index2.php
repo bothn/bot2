@@ -28,7 +28,7 @@ $chartConfig = '{"width":900,"height":250, "chart":{
 
               "borderWidth": 1,
       "pointRadius": 0,
-        "fill": "false",
+        "fill": "start",
         "data": [
 '. implode(',', $b).'
         ]
