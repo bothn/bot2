@@ -45,6 +45,7 @@ $chartConfig = '{"width":900,"height":250, "chart":{
 
     ] },
   "options": {    
+  "responsive": true,
      "title": {
       "display": true,
       "text": "Activaciones prepago"
