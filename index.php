@@ -7,7 +7,7 @@ $message = $update["message"]["text"];
 
  if (strpos($message, '/n') === 0) {
  
-$weather  = json_decode(file_get_contents ("http://190.4.63.192/reportes/wcdma/reports_kpis_h/test3json.php"),true);
+$weather  = json_decode(file_get_contents ("http://192.168.127.216/reportes/wcdma/reports_kpis_h/test3json.php"),true);
   
 
 
