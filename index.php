@@ -75,7 +75,7 @@ $response = curl_exec($ch);
   
 $grafica = json_decode($response);
   $xc=$grafica->url;
-$currentsr = json_decode(file_get_contents ("http://190.4.63.192/reportes/bot/activaciones/Successrate.php"),true);
+$currentsr = json_decode(file_get_contents ("http://192.168.127.216/reportes/bot/activaciones/Successrate.php"),true);
   foreach ($currentsr as $dc) { 
     $Su=$dc["SR"];
  
@@ -86,7 +86,7 @@ $currentsr = json_decode(file_get_contents ("http://190.4.63.192/reportes/bot/ac
 
 
 
-file_get_contents($path."/sendPhoto?chat_id=-599009724&photo=".$xc."&caption=".$test.'&parse_mode=html' );
+file_get_contents($path."/sendPhoto?chat_id=2069143370&photo=".$xc."&caption=".$test.'&parse_mode=html' );
  
   
   
