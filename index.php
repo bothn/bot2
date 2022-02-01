@@ -86,7 +86,7 @@ $currentsr = json_decode(file_get_contents ("http://192.168.127.216/reportes/bot
 
 
 
-file_get_contents($path."/sendPhoto?chat_id=2069143370&photo=".$xc."&caption=".$test.'&parse_mode=html' );
+file_get_contents($path."/sendPhoto?chat_id=-697498984&photo=".$xc."&caption=".$test.'&parse_mode=html' );
  
   
   
