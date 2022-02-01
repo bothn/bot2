@@ -2,7 +2,7 @@
 $path="https://api.telegram.org/bot2069143370:AAGiUdwcQETanfLBHtZ32S621Hpqwp8sT8E";
 $update = json_decode(file_get_contents("php://input"), TRUE);
 
-$chatId = $update["message"]["chat"][2069143370];
+$chatId = $update["message"]["chat"]["-697498984"];
 $message = $update["message"]["text"];
 
  if (strpos($message, '/n') === 0) {
