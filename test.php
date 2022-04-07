@@ -6,7 +6,7 @@ header("Pragma: no-cache");
 header('Content-Type: application/json');
 //Pull address for latitude and longitude from Google API (max 25,000 calls per day for free)
 function getaddress($lat,$lon) {
-$url = 'http://maps.googleapis.com/maps/api/geocode/json?latlng='.trim($lat).','.trim($lon).'&key=mykey1776135765176371';
+$url = 'http://maps.googleapis.com/maps/api/geocode/json?latlng='.trim($lat).','.trim($lon).'&key=AIzaSyDL5t5eNfrPGKN3MZZfxjH1TXoCCDrVCXg';
 $json = @file_get_contents($url);
 $data=json_decode($json);
 $status = $data->status;
