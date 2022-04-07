@@ -21,7 +21,7 @@ date_default_timezone_set('America/Los_Angeles');
 $timestamp = date('Y-m-d h:i:s');
 $success_response = "Successfully captured location @ $timestamp PST!";
 //Connect to MySQL database
-$conn = mysqli_connect("https://www.db4free.net/", "coordenadashn", "Musica2021", "coordenadashn");
+$conn = mysqli_connect("db4free.net", "coordenadashn", "Musica2021", "coordenadashn");
 if (!$conn) {
 die("Connection failed: " . mysqli_connect_error());
 }
