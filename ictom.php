@@ -4,7 +4,7 @@
 
 
 
-$conn_taoli=mysql_connect("sql.freedb.tech","freedb_srvsusehn1","*J*eskg%*6sSfcB");
+$conn_taoli=mysql_connect("sql.freedb.tech:3306","freedb_srvsusehn1","*J*eskg%*6sSfcB");
 mysql_select_db("freedb_cellhn",$conn_taoli);
 
 //$conn_ra=mysql_connect("192.168.127.180","root","nocadmin");
