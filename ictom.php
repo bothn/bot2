@@ -125,7 +125,13 @@ padding: 0 15px;
 
 
 
- 
+    <script src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAaNp7gMPbvQjPi0VlYx8OjRQXB8xtwzKuyt1feRlRK6m-vxoTphRAHMImX5TmxSTDXMUIIsWmnMyy6Q" 
+       type="text/javascript"></script>
+    <script type="text/javascript">
+	//AIzaSyB2Wr-tYom5jiy3NSYX8I-PpOrp-ZyTkzg 
+	//ABQIAAAAaNp7gMPbvQjPi0VlYx8OjRQXB8xtwzKuyt1feRlRK6m-vxoTphRAHMImX5TmxSTDXMUIIsWmnMyy6Q
+    //<![CDATA[
+
 
     var iconYellow = new GIcon(); 
     iconYellow.image = 'http://labs.google.com/ridefinder/images/mm_20_yellow.png';
@@ -234,8 +240,8 @@ padding: 0 15px;
 <?php
 
 
-	$conn_server_ticket=mysql_connect("sql300.epizy.com","epiz_32418681","7sz0r5nk");
-	mysql_select_db("epiz_32418681_cehn",$conn_server_ticket);
+$conn_server_ticket=mysql_connect("sql300.epizy.com","epiz_32418681","7sz0r5nk");
+mysql_select_db("epiz_32418681_cehn",$conn_server_ticket);
 
 	
 			$total=0;
