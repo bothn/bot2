@@ -243,7 +243,7 @@ padding: 0 15px;
 	$conn_server_ticket=mysql_connect("sql300.epizy.com","epiz_32418681","7sz0r5nk");
  
  
-mysql_select_db("epiz_32418681_cehn",$conn_taoli);
+mysql_select_db("epiz_32418681_cehn",$conn_server_ticket);
 	
 			$total=0;
 			$QUERY_CANTIDAD=mysql_query("SELECT count(*) as total FROM markers WHERE alarma <> 'CELDA EN ESTADO HALTED' and ne_sitename!='' ORDER BY ne_sitename" ,$conn_server_ticket);
