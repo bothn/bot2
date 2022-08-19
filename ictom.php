@@ -4,7 +4,7 @@
 
 
 
-$conn_taoli=mysql_connect("sql300.epizy.com","epiz_32418681","7sz0r5nk");
+$conn_taoli=mysql_connect("sql300.epizy.com","epiz_32418681","GdPNR7rD4VSYm4");
 mysql_select_db("epiz_32418681_cehn",$conn_taoli);
 
 //$conn_ra=mysql_connect("192.168.127.180","root","nocadmin");
