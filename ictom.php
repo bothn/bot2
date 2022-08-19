@@ -1,11 +1,11 @@
 <?php
-//$URL_K = "http://192.168.127.132:13013/sendsms?username=foo&password=bar&from=99999999&to=50495298662&text=textoprueba";
+ 
 //$FA_TT = fopen($URL_K,"r");
 
 
 
-$conn_taoli=mysql_connect("192.168.127.136","admin","nocadmin");
-mysql_select_db("google2",$conn_taoli);
+$conn_taoli=mysql_connect("sql300.epizy.com","epiz_32418681","Musica202208");
+mysql_select_db("epiz_32418681_cehn",$conn_taoli);
 
 //$conn_ra=mysql_connect("192.168.127.180","root","nocadmin");
 //mysql_select_db("celdas_oos",$conn_taoli);
