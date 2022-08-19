@@ -15,7 +15,7 @@ $id=$_GET["ticket"];
 $from=$_GET["from"];
 $texto=$_GET["texto"];
 $texto=str_replace(" ", "+",$texto);
-$today = date('Y-m-d H:i:s');
+//$today = date('Y-m-d H:i:s');
 $texto=str_replace("'", " ",$texto);
 $tipo = $_GET["key"]; 
 $texto_recibido=$texto;
@@ -80,7 +80,7 @@ if ($tt=="" && $operacion == "SDMAPERTURA"){
 	$fei=strtotime($fei);
 	$desc=$array2[7];
 	$desc = str_replace("+", " ",$desc);
-	$tiempo = (strtotime($today)-$fei);
+	//$tiempo = (strtotime($today)-$fei);
 	//$terr = substr($sitename,strpos($sitename,"(")+1,2);
 	$terr = $array2[8];
 	//$halt = $array2[9];
@@ -88,8 +88,8 @@ if ($tt=="" && $operacion == "SDMAPERTURA"){
 	$fei = date('Y-m-d H:i:s',$fei);
 	$alarma="CELDA FUERA DE SERVICIO";
 	
-	$fera= date('Ymd');
-	$hoira = date('H');
+	//$fera= date('Ymd');
+	//$hoira = date('H');
 
 	//if ($halt=="Yes"){
 	//	$alarma= "CELDA EN ESTADO HALTED";
@@ -106,15 +106,15 @@ if ($tt=="" && $operacion == "SDMAPERTURA"){
 }else if($tt!="" && $operacion == "SDMAVANCE"){
 	$buscar=trim($buscar);
 	$array2=explode("*",$buscar);
-	$fecha=$array2[0];
-	$fecha = str_replace("+", " ",$fecha);
+	///$fecha=$array2[0];
+	///$fecha = str_replace("+", " ",$fecha);
 	$desc=$array2[1];
 	$desc = str_replace("+", " ",$desc);
 	$fei=$row_main_taoli_result['hora_oos'];
 	
 	///pendiente la hora del avance
 	$fei=strtotime($fei);
-	$tiempo = (strtotime($today) - $fei)/60/60;	
+	///$tiempo = (strtotime($today) - $fei)/60/60;	
 	///fin pendiente
 	$halt = $array2[2];
 	$alarma="CELDA FUERA DE SERVICIO";
@@ -124,7 +124,7 @@ if ($tt=="" && $operacion == "SDMAPERTURA"){
 		$alarma = "CELDA FUERA DE SERVICIO";
 	}
 		
-	$main_taoli="UPDATE markers SET fecha_avance='$fecha',tiempo='$tiempo',avance='$desc', alarma='$alarma' WHERE tt = '$id'";
+	$main_taoli="UPDATE markers SET fecha_avance=avance='$desc', alarma='$alarma' WHERE tt = '$id'";
 	
 	mysql_query($main_taoli,$conn_taoli) or die(mysql_error());
 	
