@@ -4,8 +4,8 @@
 
 
 
-$conn_taoli=mysql_connect("sql300.epizy.com","epiz_32418681","GdPNR7rD4VSYm4");
-mysql_select_db("epiz_32418681_cehn",$conn_taoli);
+$conn_taoli=mysql_connect("sql.freedb.tech","freedb_srvsusehn1","*J*eskg%*6sSfcB");
+mysql_select_db("freedb_cellhn",$conn_taoli);
 
 //$conn_ra=mysql_connect("192.168.127.180","root","nocadmin");
 //mysql_select_db("celdas_oos",$conn_taoli);
