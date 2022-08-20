@@ -4,8 +4,8 @@
 
 
 
-$conn_taoli=mysql_connect("sql.freedb.tech:3306","freedb_srvsusehn1","*J*eskg%*6sSfcB");
-mysql_select_db("freedb_cellhn",$conn_taoli);
+$conn_taoli=mysql_connect("ssql3.freemysqlhosting.net","sql3513934","p7GKvFjuG4");
+mysql_select_db("sql3513934",$conn_taoli);
 
 //$conn_ra=mysql_connect("192.168.127.180","root","nocadmin");
 //mysql_select_db("celdas_oos",$conn_taoli);
