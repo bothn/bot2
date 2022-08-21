@@ -1,7 +1,7 @@
 <?php
 
 DEFINE("DB_HOST", 'sql.freedb.tech');
-DEFINE("DB_USER", 'freedb_srvsusehn1');
+DEFINE("DB_USER", 'freedb_srvsusehn1x');
 DEFINE("DB_PASS", '*J*eskg%*6sSfcB');
 DEFINE("DB_NAME", 'freedb_cellhn');
 // Create connection
