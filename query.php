@@ -41,24 +41,21 @@ $desicion_ss='';
 $main_taoli=$conn_taoli -> query("select * FROM markers WHERE tt='".$id."'");
 $row_main_taoli_result=mysqli_fetch_assoc($main_taoli);
 $tt=$row_main_taoli_result['tt'];
-
-	$buscar=trim($buscar);
-	$array2=explode("*",$buscar);
-	$site=$array2[0];
-	$sitename=$array2[1];
+ 
+	$site='sdf';
+	$sitename='1d';
 	$sitename = str_replace("+", " ",$sitename);
-	$lat=$array2[2];
-	$lon=$array2[3];
-	$tec=$array2[4];
+	$lat='-12';
+	$lon='87';
+	$tec='4G';
 	$mor=$array2[5];
-	$fei=$array2[6];
-	$fei = str_replace("+", " ",$fei);
-	$fei=strtotime($fei);
-	$desc=$array2[7];
-	$desc = str_replace("+", " ",$desc);
-	$tiempo = (strtotime($today)-$fei);
+	$fei='';
+ 
+	 
+	$desc="asdasdasd";
+  
 	//$terr = substr($sitename,strpos($sitename,"(")+1,2);
-	$terr = $array2[8];
+	$terr = 'jj';
 	//$halt = $array2[9];
 	$sitename2="[".substr($sitename,0,strpos($sitename," "))."]";
 	$fei = date('Y-m-d H:i:s',$fei);
