@@ -42,7 +42,7 @@ $desicion_ss='';
  
  $alarma="asdas";
  $site="asdasd";
- $sitename2='dfsdf'
+ $sitename2="dfsdf"
  $lat="";
  $lon="";
  $tec="";
