@@ -67,6 +67,6 @@ $desicion_ss='';
 		echo "Error: " . $main_taoli1 . "
 " . mysqli_error($conn_taoli);
 	 }
-	 mysqli_close($conn_taoli);
+	 
 
  ?>
