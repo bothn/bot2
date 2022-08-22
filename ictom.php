@@ -78,9 +78,18 @@ if ($tt=="" && $operacion == "SDMAPERTURA"){
 	//}
 	$main_taoli1="INSERT INTO markers(alarma,name,address,lat,lng,type,hora_oos,tiempo,fecha_insert,territorio,ne_sitename,morfo,tt,avance) VALUES ('$alarma','$site','$sitename2','$lat','$lon','$tec','$fei','$tiempo','$today','$terr','$sitename','$mor','$id','$desc')";
 //$conn_taoli -> query($main_taoli1) or die(mysql_error());
- mysqli_query($conn_taoli, $main_taoli1);
+/// mysqli_query($conn_taoli, $main_taoli1);
 	
-	mysqli_close($conn_taoli);
+		 if (mysqli_query($conn_taoli, $main_taoli1)) {
+		echo "New record created successfully !";
+	 } else {
+		echo "Error: " . $sql . "
+" . mysqli_error($conn_taoli);
+	 }
+	 mysqli_close($conn_taoli);
+	
+	
+	 
 }else if($tt!="" && $operacion == "SDMAVANCE"){
 	$buscar=trim($buscar);
 	$array2=explode("*",$buscar);
