@@ -80,7 +80,7 @@ if ($tt=="" && $operacion == "SDMAPERTURA"){
 //$conn_taoli -> query($main_taoli1) or die(mysql_error());
  mysqli_query($conn_taoli, $main_taoli1);
 	
-	
+	mysqli_close($conn_taoli);
 }else if($tt!="" && $operacion == "SDMAVANCE"){
 	$buscar=trim($buscar);
 	$array2=explode("*",$buscar);
