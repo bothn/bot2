@@ -83,7 +83,7 @@ if ($tt=="" && $operacion == "SDMAPERTURA"){
 		 if (mysqli_query($conn_taoli, $main_taoli1)) {
 		echo "New record created successfully !";
 	 } else {
-		echo "Error: " . $sql . "
+		echo "Error: " . $main_taoli1 . "
 " . mysqli_error($conn_taoli);
 	 }
 	 mysqli_close($conn_taoli);
