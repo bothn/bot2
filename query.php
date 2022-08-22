@@ -58,7 +58,7 @@ $desicion_ss='';
  
 
  
-	$main_taoli1="INSERT INTO markers(alarma,name,address,lat,lng,type,hora_oos,tiempo,fecha_insert,territorio,ne_sitename,morfo,tt,avance) VALUES ('$alarma','$site','$sitename2','$lat','$lon','$tec','$fei','$tiempo','$today','$terr','$sitename','$mor','$id','$desc')";
+	$main_taoli1="INSERT INTO markers(alarma,name,address,lat,lng,type,hora_oos,tiempo,fecha_insert,territorio,ne_sitename,morfo,tt,avance) VALUES ('12','123','123','12312312','123','123','1233','32','22','22','asdas','213','1','23123')";
  
 	
 		 if (mysqli_query($conn_taoli, $main_taoli1)) {
