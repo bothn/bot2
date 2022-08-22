@@ -85,7 +85,7 @@ if ($tt=="" && $operacion == "SDMAPERTURA"){
 	//}
 	$main_taoli="INSERT INTO markers(alarma,name,address,lat,lng,type,hora_oos,tiempo,fecha_insert,territorio,ne_sitename,morfo,tt,avance) VALUES ('$alarma','$site','$sitename2','$lat','$lon','$tec','$fei','$tiempo','$today','$terr','$sitename','$mor','$id','$desc')";
 	 $conn_taoli -> query($main_taoli) or die(mysql_error());
- $conn->close();
+ $conn_taoli->close();
 	
 	
 }else if($tt!="" && $operacion == "SDMAVANCE"){
@@ -112,14 +112,14 @@ if ($tt=="" && $operacion == "SDMAPERTURA"){
 	$main_taoli="UPDATE markers SET fecha_avance='$fecha',tiempo='$tiempo',avance='$desc', alarma='$alarma' WHERE tt = '$id'";
 	
 	 $conn_taoli -> query($main_taoli) or die(mysql_error());
-	$conn->close();
+	$conn_taoli->close();
 }else if ($tt!="" && $operacion == "SDMCIERRE"){
 		
 	$main_taoli="DELETE FROM markers WHERE tt = '$id'";
 	 $conn_taoli -> query($main_taoli) or die(mysql_error());
 	$hofra=date('H');
 
-	$conn->close();
+	$conn_taoli->close();
 	
 }
 
