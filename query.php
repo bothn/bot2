@@ -44,16 +44,16 @@ $desicion_ss='';
  $site="asdasd";
  $sitename2='dfsdf'
  $lat="";
- $lon"";
- $tec"";
- $fei"";
- $tiempo"12";
- $today"";
- $terr"";
- $sitename"";
- $mor"";
- $id"";
- $desc"";
+ $lon="";
+ $tec="";
+ $fei="";
+ $tiempo="12";
+ $today="";
+ $terr="";
+ $sitename="";
+ $mor="";
+ $id="";
+ $desc="";
   
  
 
