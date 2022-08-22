@@ -39,7 +39,7 @@ $nombre_contacto='';
 $desicion_tyc='';
 $desicion_ss='';
 	
- echo $test;
+ echo $Test;
 
 
 
