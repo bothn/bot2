@@ -58,14 +58,14 @@ $desicion_ss='';
  
 
  
-	$main_taoli1="INSERT INTO markers(alarma,name,address,lat,lng,type,hora_oos,tiempo,fecha_insert,territorio,ne_sitename,morfo,tt,avance) VALUES ('12','123','123','12312312','123','123','1233','32','22','22','asdas','213','1','23123')";
+	$main_taoli1="INSERT INTO freedb_cellhn.markers(alarma,name,address,lat,lng,type,hora_oos,tiempo,fecha_insert,territorio,ne_sitename,morfo,tt,avance) VALUES ('12','123','123','12312312','123','123','1233','32','22','22','asdas','213','1','23123')";
  
 	
 		 if (mysqli_query($conn_taoli, $main_taoli1)) {
 		echo "New record created successfully !";
 	 } else {
 		echo "Error: " . $main_taoli1 . "
-" . mysqli_error($conn_taoli);
+		" . mysqli_error($conn_taoli);
 	 }
 	 
 
