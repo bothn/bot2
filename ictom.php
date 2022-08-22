@@ -7,12 +7,8 @@ DEFINE("DB_NAME", 'freedb_cellhn');
 // Create connection
 $conn_taoli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 // Set charset to UFT8
-
- 
- 
-
- 
-
+$conn_taoli -> set_charset("utf8");
+date_default_timezone_set('America/Tegucigalpa');
 $id=$_GET["ticket"];
 $from=$_GET["from"];
 $texto=$_GET["texto"];
