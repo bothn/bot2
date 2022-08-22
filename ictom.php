@@ -28,13 +28,6 @@ $buscar=$array[0];
 
 $Test= $texto.$tipo.$id;
 
- 
-
-
-
-
-
- 
 
 $nombre_contacto="";
 $mensaje_respuesta="";
@@ -45,10 +38,10 @@ $nombre_contacto='';
 $desicion_tyc='';
 $desicion_ss='';
 	
-//$main_taoli=$conn_taoli -> query("select * FROM markers WHERE tt='".$id."'");
-///$row_main_taoli_result=mysqli_fetch_assoc($main_taoli);
-//$tt=$row_main_taoli_result['tt'];
-
+$main_taoli=$conn_taoli -> query("select * FROM markers WHERE tt='".$id."'");
+$row_main_taoli_result=mysqli_fetch_assoc($main_taoli);
+$tt=$row_main_taoli_result['tt'];
+echo $tt;
 
 
 if ($tt=="" && $operacion == "SDMAPERTURA"){
@@ -83,7 +76,7 @@ if ($tt=="" && $operacion == "SDMAPERTURA"){
 	//}else{
 	//	$alarma="CELDA FUERA DE SERVICIO";
 	//}
-//	$main_taoli1="INSERT INTO markers(alarma,name,address,lat,lng,type,hora_oos,tiempo,fecha_insert,territorio,ne_sitename,morfo,tt,avance) VALUES ('$alarma','$site','$sitename2','$lat','$lon','$tec','$fei','$tiempo','$today','$terr','$sitename','$mor','$id','$desc')";
+	$main_taoli1="INSERT INTO markers(alarma,name,address,lat,lng,type,hora_oos,tiempo,fecha_insert,territorio,ne_sitename,morfo,tt,avance) VALUES ('$alarma','$site','$sitename2','$lat','$lon','$tec','$fei','$tiempo','$today','$terr','$sitename','$mor','$id','$desc')";
 	//  $conn_taoli -> query($main_taoli1) or die(mysql_error());
  //mysqli_query($conn_taoli, $main_taoli1)
 	
