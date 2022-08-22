@@ -84,8 +84,8 @@ if ($tt=="" && $operacion == "SDMAPERTURA"){
 	//	$alarma="CELDA FUERA DE SERVICIO";
 	//}
 	$main_taoli1="INSERT INTO markers(alarma,name,address,lat,lng,type,hora_oos,tiempo,fecha_insert,territorio,ne_sitename,morfo,tt,avance) VALUES ('$alarma','$site','$sitename2','$lat','$lon','$tec','$fei','$tiempo','$today','$terr','$sitename','$mor','$id','$desc')";
-	 $conn_taoli -> query($main_taoli1) ;
- 
+	// $conn_taoli -> query($main_taoli1) ;
+ mysqli_query($conn_taoli, $main_taoli1)
 	
 	
 }else if($tt!="" && $operacion == "SDMAVANCE"){
