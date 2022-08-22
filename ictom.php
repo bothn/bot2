@@ -45,9 +45,9 @@ $nombre_contacto='';
 $desicion_tyc='';
 $desicion_ss='';
 	
-$main_taoli=$conn_taoli -> query("select * FROM markers WHERE tt='".$id."'");
-$row_main_taoli_result=mysqli_fetch_assoc($main_taoli);
-$tt=$row_main_taoli_result['tt'];
+//$main_taoli=$conn_taoli -> query("select * FROM markers WHERE tt='".$id."'");
+///$row_main_taoli_result=mysqli_fetch_assoc($main_taoli);
+//$tt=$row_main_taoli_result['tt'];
 
 
 
